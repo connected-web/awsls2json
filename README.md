@@ -14,7 +14,7 @@ convert.js:
 const fs = require('fs');
 const awsls2json = require('./awsls2json');
 
-const filelist = fs.readFileSync('filelist.txt');
+const filelist = fs.readFileSync('filelist.txt', 'utf8');
 const json = awsls2json(filelist);
 
 console.log('Result', json);
@@ -40,36 +40,30 @@ node convert.js
 ## Example Output
 
 ```json
-[
-  {
+[{
     "date": "2016-09-15",
     "time": "08:49:19",
     "size": "248",
-    "filename": "ae6b938.json"
-  },
-  {
+    "file": "ae6b938.json"
+}, {
     "date": "2016-09-15",
     "time": "09:02:05",
     "size": "258",
-    "filename": "538e9c7.json"
-  },
-  {
+    "file": "538e9c7.json"
+}, {
     "date": "2016-09-15",
     "time": "12:40:25",
     "size": "258",
-    "filename": "932a834.json"
-  },
-  {
+    "file": "932a834.json"
+}, {
     "date": "2016-09-15",
     "time": "12:47:23",
     "size": "258",
-    "filename": "1d66964.json"
-  },
-  {
+    "file": "1d66964.json"
+}, {
     "date": "2016-09-15",
     "time": "13:51:24",
     "size": "258",
-    "filename": "a7a7906.json"
-  }
-]
+    "file": "a7a7906.json"
+}]
 ```

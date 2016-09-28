@@ -4,7 +4,7 @@
   "description": "Converts AWS LS format to a JSON file",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r"
+    "test": "node node_modules/mocha/bin/mocha --recursive"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,9 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/connected-web/awsls2json/issues"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.0"
   }
 }

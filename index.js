@@ -3,7 +3,7 @@ var NL = '\n';
 // Example aws s3 ls line:
 // 2016-09-15 13:51:24        258 a7a7906.json
 var fileMatcher = /(\d\d\d\d-\d\d-\d\d)\s+(\d\d:\d\d:\d\d)\s+(\d+)\s+(.*)/;
-var folderMatcher = /(PRE)\s+(.*\/)/;
+var folderMatcher = /(PRE)\s+(.*)/;
 
 function decodeLine(line) {
   var result = {};

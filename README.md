@@ -30,40 +30,37 @@ node convert.js
 ## Example Input
 
 ```sh
-2016-09-15 08:49:19        248 ae6b938.json
-2016-09-15 09:02:05        258 538e9c7.json
-2016-09-15 12:40:25        258 932a834.json
-2016-09-15 12:47:23        258 1d66964.json
-2016-09-15 13:51:24        258 a7a7906.json
+PRE eab12b4/
+PRE ff3d347/
+PRE unminified/
+2016-11-09 16:13:02          8 latest-regression-candidate
 ```
 
 ## Example Output
 
 ```json
 [{
-    "date": "2016-09-15",
-    "time": "08:49:19",
-    "size": "248",
-    "file": "ae6b938.json"
+    "pre": "PRE",
+    "folder": "eab12b4/"
+},{
+    "pre": "PRE",
+    "folder": "ff3d347/"
 }, {
-    "date": "2016-09-15",
-    "time": "09:02:05",
-    "size": "258",
-    "file": "538e9c7.json"
+    "pre": "PRE",
+    "folder": "unminified/"
 }, {
-    "date": "2016-09-15",
-    "time": "12:40:25",
-    "size": "258",
-    "file": "932a834.json"
-}, {
-    "date": "2016-09-15",
-    "time": "12:47:23",
-    "size": "258",
-    "file": "1d66964.json"
-}, {
-    "date": "2016-09-15",
-    "time": "13:51:24",
-    "size": "258",
-    "file": "a7a7906.json"
+    "date": "2016-11-09",
+    "time": "16:13:02",
+    "size": "8",
+    "file": "latest-regression-candidate"
 }]
+
 ```
+
+## Changelog
+
+### Version 1.0.1
+- Add support for folders
+
+### Version 1.0.0
+- Initial release, with support for a files in a folder

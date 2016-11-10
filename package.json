@@ -1,6 +1,6 @@
 {
   "name": "awsls2json",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Converts AWS LS format to a JSON file",
   "main": "index.js",
   "scripts": {

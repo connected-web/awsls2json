@@ -41,13 +41,13 @@ PRE unminified/
 ```json
 [{
     "pre": "PRE",
-    "folder": "eab12b4/"
+    "folder": "eab12b4"
 },{
     "pre": "PRE",
-    "folder": "ff3d347/"
+    "folder": "ff3d347"
 }, {
     "pre": "PRE",
-    "folder": "unminified/"
+    "folder": "unminified"
 }, {
     "date": "2016-11-09",
     "time": "16:13:02",
@@ -58,6 +58,9 @@ PRE unminified/
 ```
 
 ## Changelog
+
+### Version 1.0.2
+- Remove trailing slash from folder keys
 
 ### Version 1.0.1
 - Add support for folders

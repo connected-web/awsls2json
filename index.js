@@ -17,7 +17,7 @@ function decodeLine(line) {
   } else if (folderMatcher.test(line)) {
     var parts = line.match(folderMatcher);
     result.pre = parts[1];
-    result.folder = parts[2];
+    result.folder = parts[2].replace('/', '');
   } else {
     result = false;
   }
